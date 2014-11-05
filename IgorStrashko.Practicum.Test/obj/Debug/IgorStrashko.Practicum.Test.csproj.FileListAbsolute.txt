@@ -1,0 +1,7 @@
+C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.Test\bin\Debug\IgorStrashko.Practicum.Test.dll
+C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.Test\bin\Debug\IgorStrashko.Practicum.Test.pdb
+C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.Test\obj\Debug\IgorStrashko.Practicum.Test.dll
+C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.Test\obj\Debug\IgorStrashko.Practicum.Test.pdb
+C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.Test\bin\Debug\IgorStrashko.Practicum.BLL.dll
+C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.Test\bin\Debug\IgorStrashko.Practicum.BLL.pdb
+C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.Test\obj\Debug\IgorStrashko.Practicum.Test.csprojResolveAssemblyReference.cache
