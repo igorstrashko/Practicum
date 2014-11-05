@@ -7,13 +7,17 @@ using IgorStrashko.Practicum.BLL;
 
 namespace IgorStrashko.Practicum.BLL.Abstract
 {
+    /// <summary>
+    /// Abstract base class to represent meal types
+    /// </summary>
     public abstract class MealType: IDishType
     {
         //Containers for items in order
-        public IList<string> Entrees { get; set; }
-        public IList<string> Sides { get; set; }
-        public IList<string> Drinks { get; set; }
-        public IList<string> Desserts { get; set; }
+        protected IList<string> Entrees { get; set; }
+        protected IList<string> Sides { get; set; }
+        protected IList<string> Drinks { get; set; }
+        protected IList<string> Desserts { get; set; }
+
         bool invalidItemTypeFound = false;
 
         //Default for allowed number of dish types
@@ -22,7 +26,7 @@ namespace IgorStrashko.Practicum.BLL.Abstract
         protected virtual int AllowedDrinks { get { return 1; } }
         protected virtual int AllowedDesserts { get { return 1; } }
 
-        public void AddItems(IList<DishType> dishTypes)
+        internal void AddItems(IList<DishType> dishTypes)
         {
             foreach (var dishType in dishTypes)
             {
@@ -57,7 +61,7 @@ namespace IgorStrashko.Practicum.BLL.Abstract
             }
         }
 
-        public virtual string ToSummary()
+        internal virtual string ToSummary()
         {
             StringBuilder summary = new StringBuilder();
             bool stop = false;
@@ -81,7 +85,7 @@ namespace IgorStrashko.Practicum.BLL.Abstract
                 }
                 return true;
             };
-
+            //Used to do (x2) type of stuff
             if (Entrees.Count > 1 && (!Entrees.Where(e => e == "error").Any()))
             {
                 summary.Append(string.Format("{0}(x{1}), ", Entree, Entrees.Count));

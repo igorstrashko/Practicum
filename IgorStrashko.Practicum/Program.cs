@@ -11,15 +11,23 @@ namespace IgorStrashko.Practicum
     {
         static void Main(string[] args)
         {
-            Order order = new Order(args[0]);
+            string input = args.ToString();
+            if (args.Length == 0)
+            {
+                Console.WriteLine("Enter arguments in comma-separated list:");
+                input = Console.ReadLine();
+            }
+            while (!string.IsNullOrEmpty(input))
+            {
+                Order order = new Order(input);
 
-            //Use facade to validate, process and recieve output
-            string summary = order.ProcessOrder();
-            
-            //Wait for further directions
-            Console.WriteLine(summary);
-            Console.ReadLine();
+                //Use facade to validate, process and recieve output
+                string summary = order.ProcessOrder();
 
+                //Wait for further directions
+                Console.WriteLine(summary);
+                input = Console.ReadLine();
+            }
 
         }
     }

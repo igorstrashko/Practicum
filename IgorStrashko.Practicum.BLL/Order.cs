@@ -8,10 +8,14 @@ using IgorStrashko.Practicum.BLL.Abstract;
 
 namespace IgorStrashko.Practicum
 {
+    /// <summary>
+    /// Facade class to validate and process an order
+    /// </summary>
     public class Order
     {
         public bool IsValid { get; set; }
         public string Error { get; set; }
+        //Standard error messages
         public const string INVALID_LENGTH = "Input has to have Time of Day and at least one Dish Type selection";
         public const string INVALID_TOD = "You must enter time of day as 'morning' or 'night'";
 
@@ -50,7 +54,7 @@ namespace IgorStrashko.Practicum
                     }
                     else
                     {
-                        //Convert to DishType enum
+                        //Convert to DishType enum if possible
                         DishType dt = (DishType)Enum.Parse(typeof(DishType), s);
                         DishTypes.Add(dt);
                     }
@@ -76,6 +80,11 @@ namespace IgorStrashko.Practicum
             }
             return output;
         }
+        /// <summary>
+        /// Factory-type method to create proper MealType object based on timeofDay
+        /// </summary>
+        /// <param name="timeofDay"></param>
+        /// <returns></returns>
         private static MealType GetMealType(string timeofDay)
         {
             switch (timeofDay.ToLower())

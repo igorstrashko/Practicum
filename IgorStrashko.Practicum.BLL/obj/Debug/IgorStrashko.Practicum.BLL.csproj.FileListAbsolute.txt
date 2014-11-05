@@ -1,5 +1,0 @@
-C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.BLL\bin\Debug\IgorStrashko.Practicum.BLL.dll
-C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.BLL\bin\Debug\IgorStrashko.Practicum.BLL.pdb
-C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.BLL\obj\Debug\IgorStrashko.Practicum.BLL.dll
-C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.BLL\obj\Debug\IgorStrashko.Practicum.BLL.pdb
-C:\Development\Learning\IgorStrashko.Practicum\IgorStrashko.Practicum.BLL\obj\Debug\IgorStrashko.Practicum.BLL.csprojResolveAssemblyReference.cache
